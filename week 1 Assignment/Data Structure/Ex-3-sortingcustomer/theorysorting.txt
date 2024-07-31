@@ -1,0 +1,30 @@
+Exercise 3: Sorting Customer Orders
+
+Understanding Sorting Algorithms
+
+1. Bubble Sort:
+Bubble Sort repeatedly compares and swaps adjacent pairs of elements if they are in the wrong order. This process continues until the array is sorted.
+
+2. Insertion Sort:
+Insertion Sort builds the final sorted array one element at a time by picking elements and inserting them into their correct position.
+
+3. Quick Sort:
+Quick Sort divides the array into two sub-arrays based on a pivot element and recursively sorts these sub-arrays. The pivot element is placed in its correct position in the sorted array.
+
+4. Merge Sort:
+Merge Sort divides the array into two halves, recursively sorts each half, and then merges the sorted halves back together.
+
+
+Analysis of Bubble Sort vs. Quick Sort
+
+1. Time Complexity Comparison:
+
+Bubble Sort:
+
+Time Complexity: O(n^2) in both average and worst-case scenarios. This quadratic growth in execution time makes Bubble Sort impractical for large datasets.
+Quick Sort:
+
+Time Complexity: O(n log n) on average, making it much more efficient for large datasets compared to Bubble Sort. The worst-case time complexity is O(n^2), but this can be mitigated with good pivot selection strategies.
+2. Why Quick Sort is Preferred:
+
+Quick Sort is more efficient for larger datasets due to its average time complexity of O(n log n), compared to Bubble Sort's O(n^2). It operates in-place, requiring minimal additional storage, and generally performs better in practice because it involves fewer comparisons and swaps.

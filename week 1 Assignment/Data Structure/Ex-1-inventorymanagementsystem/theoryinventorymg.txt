@@ -1,0 +1,28 @@
+Exercise 1: Inventory Management System
+
+Understanding the Problem
+Why Data Structures and Algorithms are Essential:
+In an inventory management system, efficiently managing large inventories is crucial for performance and reliability. Data structures and algorithms play a key role in achieving this:
+
+Data Structures: These are used to organize and store inventory data, making it easy to access and manipulate. The choice of data structure impacts the performance of operations such as adding, updating, and deleting products. Efficient data structures enhance query performance and reduce the time complexity of these operations.
+
+Algorithms: These implement operations on data structures, including searching, inserting, and deleting items.
+
+Types of Data Structures Suitable for the Problem:
+
+HashMap: The provided code uses a HashMap to map product IDs (unique identifiers) to Product objects. HashMap provides average-case constant-time complexity O(1) for operations like adding, updating, and deleting, making it highly efficient for these tasks.
+
+ArrayList: Although an ArrayList can store products, it is less efficient for searching and deleting operations since finding a product by ID requires linear time (O(n)). However, it can be suitable for ordered storage or frequent access by index.
+
+Analysis
+Time Complexity Analysis of Operations:
+
+Add Product: In a HashMap, adding a product has an average time complexity of O(1). This is because inserting a new entry involves computing a hash and placing the entry in the appropriate bucket.
+
+Update Product: Updating a product also has an average time complexity of O(1). The HashMap allows direct access to the value via its key, so the update operation involves simply replacing the value associated with the given key.
+
+Delete Product: Deleting a product from a HashMap has an average time complexity of O(1). Removing an entry involves locating the bucket for the given key and removing the entry from that bucket.
+
+Optimizing Operations:
+
+HashMap: Ensuring that the hash function distributes keys uniformly is crucial to avoid collisions, which can degrade performance. Properly managing the load factor and resizing the hash table as needed helps maintain O(1) performance.

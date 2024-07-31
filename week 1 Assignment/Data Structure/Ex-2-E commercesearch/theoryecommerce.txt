@@ -1,0 +1,38 @@
+Exercise 2: E-commerce Platform Search Function
+
+Understanding Asymptotic Notation:
+
+a. Big O Notation:
+Big O notation is a mathematical tool used to describe the efficiency of an algorithm in terms of its time complexity (how the runtime grows with input size) or space complexity (how the memory usage grows with input size).
+
+b. Best, Average, and Worst-Case Scenarios for Search Operations:
+For search operations, the performance varies depending on the algorithm used:
+
+Best Case: The search completes in the minimum number of steps.
+Average Case: The search completes in a typical number of steps.
+Worst Case: The search requires the maximum number of steps.
+
+Analysis:
+
+Time Complexity Comparison:
+
+Linear Search: O(n)
+
+In a linear search, each element in the array is checked to find the target. In the worst case, if the target is at the last position or not present, all n elements must be checked.
+Binary Search: O(log n)
+
+Binary search reduces the search interval by half with each step, resulting in logarithmic time complexity, which is significantly faster than linear search for large arrays. However, it requires the array to be sorted beforehand.
+
+Suitability:
+
+Linear Search:
+
+Ideal for unsorted or frequently changing data and small datasets due to its simplicity and lack of preprocessing requirements. It is easy to implement but less efficient for large, sorted datasets compared to binary search.
+Binary Search:
+
+Best suited for sorted data and static lists that are searched frequently. It is much faster for large datasets because it quickly reduces the search range, unlike linear search.
+
+
+
+
+

@@ -1,0 +1,21 @@
+ Exercise 7: Financial Forecasting
+
+1. Understanding Recursive Algorithms
+
+Concept of Recursion:
+Recursion is a method where a function calls itself to solve smaller parts of the same problem. It simplifies complex problems by breaking them down into more manageable sub-problems. This approach is particularly useful for tasks that have a repetitive structure or can be divided into similar smaller problems.
+
+2.How Recursion Simplifies Problems:
+- Divide and Conquer: Recursion breaks a problem into smaller sub-problems, making them easier to solve. Each recursive call handles a smaller portion of the original problem.
+
+3. Implementation
+
+In the `calculateFutureValue` method, recursion is used to determine the future value of an investment over multiple periods. Each call to `calculateFutureValue` reduces the number of periods by one until it reaches the base case (when periods equal 0). At each step, it multiplies the present value by (1 + growthRate) to get the value for the next period, demonstrating how recursion simplifies the calculation of compound growth.
+
+4. Analysis of the Recursive Algorithm
+
+Time Complexity:
+The time complexity of the given recursive algorithm is O(n), where n is the number of periods. In the worst-case scenario, the function will make one recursive call for each period. However, with memoization, each unique number of periods is calculated only once, and subsequent calls for the same number of periods retrieve the result from the memoization cache.
+
+Optimizing Recursive Solutions:
+Memoization is used in the provided code to avoid redundant calculations, significantly optimizing the recursive approach. By storing the results of previously computed values in a HashMap, the algorithm avoids recalculating the future value for the same number of periods multiple times. This reduces the number of recursive calls and prevents excessive computation.

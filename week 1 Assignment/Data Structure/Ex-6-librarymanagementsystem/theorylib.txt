@@ -1,0 +1,31 @@
+Exercise 6: Library Management System
+
+Understanding Search Algorithms
+Linear Search:
+A basic method where each element in the list is checked sequentially until the desired element is found or the end of the list is reached. The worst-case time complexity is O(n), where n is the number of elements.
+
+Binary Search:
+An efficient method used for sorted lists. It works by repeatedly dividing the list in half to find the target element. The worst-case time complexity is O(log n).
+
+Analysis
+Time Complexity Comparison:
+
+Linear Search: O(n)
+Binary Search: O(log n)
+Use Cases:
+
+Linear Search:
+
+Best suited for small or unsorted datasets.
+Easy to implement as it does not require sorting overhead.
+Binary Search:
+
+Ideal for large, sorted datasets due to its efficiency.
+Requires the list to be sorted, making it suitable for situations where sorting is feasible and frequent searches are performed.
+
+
+
+
+
+
+
