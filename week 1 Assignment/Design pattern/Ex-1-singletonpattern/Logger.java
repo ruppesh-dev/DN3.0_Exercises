@@ -1,4 +1,4 @@
-package designPatterns.singletonExample;
+package designPatterns.singletonExamplee;
 
 public class Logger {
     private static Logger instance;
